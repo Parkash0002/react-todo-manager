@@ -76,7 +76,6 @@ const store = createStore(reducer,storeFromLocalStorage);
 
 //Updating store present in local storage 
 store.subscribe(()=>{
-    console.log(store.getState());
     saveStoreToLocalStorage(store.getState());
 })
 
